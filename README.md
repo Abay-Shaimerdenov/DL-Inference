@@ -11,7 +11,7 @@ Here, the **images** and **model_data** folders should be created.
 Images should be placed inside the **images** folder which should be like this: _images/val/images/ILSVRC2012_val_00000001.JPEG_.  
 Image dataset (ImageNet LSVRC 2012) can be downloaded [here](https://academictorrents.com/details/5d6d0df7ed81efd49ca99ea4737e0ae5e3a5f2e5).  
 Inside of the **model_data** folder, the nested folder structure is like this: _model_data/tensorflow/checkpoints/inception_v4/inception_v4.cpkt_, the same for others DNN models:
-/resnet_v1_152/, /mobilenet_v1_1.0_224/.  
+/checkpoints/resnet_v1_152/, /checkpoints/mobilenet_v1_1.0_224/.  
 Inside these folders, checkpoints should be placed respectively.  
 Checkpoints can be downloaded from [here](https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models). 
 ## Running the project
