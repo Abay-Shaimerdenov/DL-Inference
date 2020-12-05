@@ -15,4 +15,4 @@ Inside of the **model_data** folder, the nested folder structure is like this: _
 Inside these folders, checkpoints should be placed respectively.  
 Checkpoints can be downloaded from [here](https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models). 
 ## Running the project
-First, the Database Tutorial.ipynb file should be run, and then the CSV Tutorial.ipynb file. After the CSV file is generated (it is provided here, but only with 15k entries), Testing the premodel.ipynb file should be run.
+First, the Database Tutorial.ipynb file should be run, and then the CSV Tutorial.ipynb file. After the CSV file is generated (it is provided here, but only with 15k entries), Cross validating the premodel.ipynb file should be run.
