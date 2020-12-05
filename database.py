@@ -223,6 +223,37 @@ def get_model_top_1(db_name, img_num, model_name):
     cursor.execute(cmd)
     result = cursor.fetchall()
     return result[0][0]
+
+def get_model_top_5(db_name, img_num, model_name):
+    #print("Connecting to database...")
+    connection = connect_db(db_name)
+    cursor = connection.cursor()
+    
+    cmd = 'SELECT top_5 FROM exec_data WHERE model_name=\''+model_name+'\' and img_num=\''+str(img_num)+'\''
+    cursor.execute(cmd)
+    result = cursor.fetchall()
+    return result[0][0]
+
+def get_model_top_n(db_name, img_num, model_name, n):
+    #print("Connecting to database...")
+    connection = connect_db(db_name)
+    cursor = connection.cursor()
+    
+    cmd = 'SELECT top_' + str(n)
+    cmd += ' FROM exec_data WHERE model_name=\''+model_name+'\' and img_num=\''+str(img_num)+'\''
+    cursor.execute(cmd)
+    result = cursor.fetchall()
+    return result[0][0]
+
+def get_model_time(db_name, img_num, model_name):
+    #print("Connecting to database...")
+    connection = connect_db(db_name)
+    cursor = connection.cursor()
+    
+    cmd = 'SELECT performance FROM exec_data WHERE model_name=\''+model_name+'\' and img_num=\''+str(img_num)+'\''
+    cursor.execute(cmd)
+    result = cursor.fetchall()
+    return result[0][0]
    
 def get_best_models(db_name, list_images, list_model):
     """
