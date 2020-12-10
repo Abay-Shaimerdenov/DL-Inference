@@ -1,6 +1,7 @@
 # DL-Inference
 This is a replication project. The paper can be found [here](https://arxiv.org/pdf/1805.04252.pdf). The original source code can be found [here](https://zenodo.org/record/1242583#.WvAmFXUvz80).  
 ## Requirements to run this project
+- *Jupyter Notebook*  
 - *Python 2 - 3.7*  
 - *Tensorflow 1.3 - 1.15*  
 - *MySQL*  
