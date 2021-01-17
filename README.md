@@ -21,4 +21,4 @@ Inside **/model_data/tensorflow/checkpoints/** folder, three folders should be c
 Inside these folders, checkpoints should be placed respectively like this: _model_data/tensorflow/checkpoints/inception_v4/inception_v4.cpkt_ (mobilenet will have three files (3 x mobilenet_v1_1.0_224.cpkt.*)).    
 Checkpoints can be downloaded from [here](https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models). 
 ## Running the project
-First, the Database Tutorial.ipynb file should be run, and then the CSV Tutorial.ipynb file. After the two CSV files are generated (they are provided here), Cross validating the premodel.ipynb file should be run.
+First, the Database Tutorial.ipynb file should be run, and then the CSV Tutorial.ipynb file. After the two CSV files are generated (they are provided here), Cross validating the premodel.ipynb file should be run. A note: logistic regression in the *premodel.py* file was added by me (it was not in the original source code).
